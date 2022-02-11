@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Authentication page</title>
+        <style>
+            .container{
+                width: 30%;
+                border: 1px solid black;
+                margin: auto;
+                padding: 20px;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <form action="Authservlet" method="POST">
+                <h3>Enter Your Credentials</h3>
+                <table>
+                    <tr>
+                        <td>Enter EmployeeId :</td>
+                        <td> <input type="text" name="emp_id" placeholder="Enter here"/> </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Enter Password :</td>
+                        <td> <input type="password" name="password" placeholder="Enter here"/> </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <button type="submit">Login</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
